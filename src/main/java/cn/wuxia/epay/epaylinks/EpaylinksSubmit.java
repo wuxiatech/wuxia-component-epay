@@ -113,7 +113,7 @@ public class EpaylinksSubmit {
             String reqPars = sb.substring(0, sb.lastIndexOf("&"));
 
             return this.getGatewayUrl() + "?" + reqPars;
-        } catch (UnsupportedEncodingException | IllegalAccessException | InvocationTargetException | IntrospectionException e) {
+        } catch (Exception e) {
             logger.error("", e);
             throw new EpayException(e.getMessage());
         }
@@ -146,7 +146,7 @@ public class EpaylinksSubmit {
 
             //调试信息
             this.setDebugMsg(sb.toString() + " => sign:" + sign);
-        } catch (IllegalAccessException | InvocationTargetException | IntrospectionException e) {
+        } catch (Exception e) {
             logger.error("", e);
             throw new EpayException(e.getMessage());
         }
