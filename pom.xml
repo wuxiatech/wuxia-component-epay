@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>cn.wuxia.parent</groupId>
 		<artifactId>parent2017</artifactId>
-		<version>1.5.2</version>
+		<version>1.5.3</version>
 		<relativePath>../wuxia-parent</relativePath>
 	</parent>
 	<artifactId>wuxia-epay</artifactId>
