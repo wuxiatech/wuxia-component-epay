@@ -6,7 +6,7 @@ public enum PaymentTradeTypeEnum {
 	// 充值
 	CHONGZHI((short) 10, "充值"),
 	// 订单付款
-	DINGDANFUKUAN((short) 20, "订单付款");
+	DINGDAN((short) 20, "订单付款");
 	private final short type;
 
 	private String remark;
