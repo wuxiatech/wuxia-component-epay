@@ -20,6 +20,10 @@ public class AlipayConfig {
     // 合作身份者ID，签约账号，以2088开头由16位纯数字组成的字符串，查看地址：https://b.alipay.com/order/pidAndKey.htm
     public static String partner = properties.getProperty("parner");
 
+    /**
+     * 支付宝分配给开发者的应用ID
+     */
+    public static String appid = properties.getProperty("app_id");
     // 收款支付宝账号，以2088开头由16位纯数字组成的字符串，一般情况下收款账号就是签约账号
     public static String seller_id = partner;
 
@@ -42,7 +46,7 @@ public class AlipayConfig {
     public static String FORMAT = "json";
 
     // 支付宝公钥
-    public static String ALIPAY_PUBLIC_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB";
+    public static String ALIPAY_PUBLIC_KEY = properties.getProperty("app_public_key");
 
     // 日志记录目录
     public static String log_path = "/log";

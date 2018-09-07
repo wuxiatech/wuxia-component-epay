@@ -8,6 +8,7 @@ package cn.wuxia.epay.alipay.constants;
 import java.util.Properties;
 
 import cn.wuxia.common.util.PropertiesUtils;
+import org.springframework.util.Assert;
 
 /**
  * 支付宝服务窗环境常量（demo中常量只是参考，需要修改成自己的常量值）
@@ -18,7 +19,7 @@ import cn.wuxia.common.util.PropertiesUtils;
 public class AlipayServiceEnvConstants {
 
     /**支付宝公钥-从支付宝服务窗获取*/
-    public static final String ALIPAY_PUBLIC_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDI6d306Q8fIfCOaTXyiUeJHkrIvYISRcc73s3vF1ZT7XN8RNPwJxo8pWaJMmvyTn9N4HQ632qJBVHf8sxHi/fEsraprwCtzvzQETrNRwVxLO5jVmRGi60j8Ue1efIlzPXV9je9mkjzOmdssymZkh2QhUrCmZYI/FCEa3/cNMW0QIDAQAB";
+    public static String ALIPAY_PUBLIC_KEY = "";
 
     /**签名编码-视支付宝服务窗要求*/
     public static final String SIGN_CHARSET = "UTF-8";
@@ -27,7 +28,7 @@ public class AlipayServiceEnvConstants {
     public static final String CHARSET = "UTF-8";
 
     /**签名类型-视支付宝服务窗要求*/
-    public static String SIGN_TYPE = "";
+    public static String SIGN_TYPE = "RSA2";
 
     public static String PARTNER = "";
 
@@ -43,7 +44,7 @@ public class AlipayServiceEnvConstants {
     public static String PUBLIC_KEY = "";
 
     /**支付宝网关*/
-    public static String ALIPAY_GATEWAY = "";
+    public static String ALIPAY_GATEWAY = "https://openapi.alipay.com/gateway.do";
 
     /**授权访问令牌的授权类型*/
     public static final String GRANT_TYPE = "authorization_code";
@@ -54,7 +55,9 @@ public class AlipayServiceEnvConstants {
         PRIVATE_KEY = properties.getProperty("app_private_key");
         APP_ID = properties.getProperty("app_id");
         PUBLIC_KEY = properties.getProperty("app_public_key");
-        ALIPAY_GATEWAY = properties.getProperty("alipay_gateway");
-        SIGN_TYPE = properties.getProperty("sign_type");
+        ALIPAY_PUBLIC_KEY = properties.getProperty("alipay_public_key");
+        Assert.notNull(ALIPAY_PUBLIC_KEY, "alipay_public_key为空");
+        //ALIPAY_GATEWAY = properties.getProperty("alipay_gateway");
+        //SIGN_TYPE = properties.getProperty("sign_type");
     }
 }
