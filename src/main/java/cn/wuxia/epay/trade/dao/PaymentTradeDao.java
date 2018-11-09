@@ -3,12 +3,12 @@ package cn.wuxia.epay.trade.dao;
 import java.math.BigDecimal;
 import java.util.List;
 
+import cn.wuxia.common.hibernate.dao.BasicHibernateDao;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import cn.wuxia.common.hibernate.dao.BasicHibernateDao;
 import cn.wuxia.epay.trade.enums.PaymentTradeStatusEnum;
 import cn.wuxia.epay.trade.model.PaymentTrade;
 

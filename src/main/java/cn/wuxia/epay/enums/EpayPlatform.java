@@ -10,7 +10,9 @@ package cn.wuxia.epay.enums;
 
 public enum EpayPlatform {
 
-	CHINAPAY("中国银联在线"), EPAYLINKS("易票联支付"), WECHATPAY("微信支付"), ALIPAY("支付宝"), BAIFUBAO("百度钱包");
+	CHINAPAY("中国银联在线"), 
+	@Deprecated
+	EPAYLINKS("易票联支付"), WECHATPAY("微信支付"), ALIPAY("支付宝"), BAIFUBAO("百度钱包");
 	private String platformName;
 
 	private EpayPlatform(String platformName) {
