@@ -1,7 +1,15 @@
 *.class
 /target
+.idea
 .svn
-rebel.xml
+# Package Files #
+*.jar
+*.war
+*.ear
 *.DS_Store
 *.iml
 .settings
+.project
+rebel.xml
+.classpath
+*.bak

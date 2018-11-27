@@ -10,12 +10,12 @@
 	</parent>
 	<artifactId>wuxia-epay</artifactId>
 	<name>WUXIA ePay</name>
-	<version>2.2.1</version>
+	<version>2.2.2-SNAPSHOT</version>
 	<description>WUXIA Payment Project</description>
 	<url>https://github.com/wuxiatech/wuxia-epay</url>
 	<properties>
-		<wuxia-common.version>2.2.1</wuxia-common.version>
-		<wuxia-orm-hibernate.version>2.2.1</wuxia-orm-hibernate.version>
+		<wuxia-common.version>2.2.2-SNAPSHOT</wuxia-common.version>
+		<wuxia-orm-hibernate.version>2.2.2-SNAPSHOT</wuxia-orm-hibernate.version>
 	</properties>
 	<dependencies>
 		<dependency>
