@@ -8,10 +8,11 @@
 		<version>2.3.0</version>
 		<relativePath>../wuxia-parent</relativePath>
 	</parent>
-	<artifactId>wuxia-epay</artifactId>
-	<name>WUXIA ePay</name>
+	<groupId>cn.wuxia.component</groupId>
+	<artifactId>wuxia-component-epay</artifactId>
+	<name>WUXIA ePay Component</name>
 	<version>2.3.0-SNAPSHOT</version>
-	<description>WUXIA Payment Project</description>
+	<description>WUXIA Payment Component Project</description>
 	<url>https://github.com/wuxiatech/wuxia-epay</url>
 	<properties>
 		<wuxia-common.version>2.3.0-SNAPSHOT</wuxia-common.version>
@@ -227,5 +228,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<groupId>cn.wuxia.epay</groupId>
 </project>
