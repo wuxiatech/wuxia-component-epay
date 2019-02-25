@@ -1,1 +1,1 @@
-# wuxia-epay
+# wuxia-epay-component
