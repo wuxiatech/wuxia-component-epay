@@ -5,29 +5,29 @@
 	<parent>
 		<groupId>cn.wuxia.parent</groupId>
 		<artifactId>parent2019</artifactId>
-		<version>2.3.1</version>
+		<version>2.3.2</version>
 		<relativePath>../wuxia-parent</relativePath>
 	</parent>
 	<groupId>cn.wuxia.component</groupId>
-	<artifactId>wuxia-component-epay</artifactId>
+	<artifactId>wuxia.epay-component</artifactId>
 	<name>WUXIA ePay Component</name>
-	<version>2.3.1</version>
+	<version>2.3.2</version>
 	<description>WUXIA Payment Component Project</description>
 	<url>https://github.com/wuxiatech/wuxia-epay</url>
 	<properties>
-		<wuxia-common.version>2.3.1</wuxia-common.version>
-		<wuxia-orm-hibernate.version>2.3.1</wuxia-orm-hibernate.version>
+		<wuxia-common.version>2.3.2</wuxia-common.version>
+		<wuxia-orm-hibernate.version>2.3.2</wuxia-orm-hibernate.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>cn.wuxia.common</groupId>
-			<artifactId>wuxia-common</artifactId>
+			<artifactId>wuxia.common</artifactId>
 			<version>${wuxia-common.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>cn.wuxia.common</groupId>
-			<artifactId>wuxia-orm-hibernate5</artifactId>
+			<artifactId>wuxia.hibernate5-orm</artifactId>
 			<version>${wuxia-orm-hibernate.version}</version>
 			<scope>provided</scope>
 		</dependency>
