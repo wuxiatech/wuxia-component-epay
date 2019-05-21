@@ -4,7 +4,7 @@
 * 支付平台
 * Version       Date         Author           Reason
 * <Ver.No>     <date>        <who modify>       <reason>
-* Copyright 2014-2020 www.ibmall.cn All right reserved.
+* Copyright 2014-2020 songlin.li All right reserved.
 */
 package cn.wuxia.component.epay.enums;
 
